@@ -17,7 +17,6 @@ body {
 .main {
     height: 100vh;
     width: 100%;
-    background-color: grey;
 }
 
 .center {
@@ -82,4 +81,11 @@ body {
     transform: rotateY(-90deg);
     transform-origin: right;
 
+}
+
+.bar {
+    height: 100%;
+    background-color: rgba(255, 0, 120, 0.6);
+    box-shadow: 5px 5px 50px rgba(255, 0, 120, 0.3);
+    width: 70%;
 }
