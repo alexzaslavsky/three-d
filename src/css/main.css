@@ -64,11 +64,11 @@ body {
 }
 
 .back {
-    transform: translateZ(-60px);
+    transform: translateZ(-100px);
 }
 
 .left {
-    width: 60px;
+    width: 100px;
     transform: rotateY(90deg);
     transform-origin: left;
 }
@@ -78,7 +78,7 @@ body {
     left: unset;
     top: 0;
     right: 0;
-    width: 60px;
+    width: 100px;
     transform: rotateY(-90deg);
     transform-origin: right;
 
