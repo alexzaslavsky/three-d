@@ -1,0 +1,85 @@
+:root {
+    --grey-header: #dedede;
+    --white: #ffffff;
+    --grey: #f6f6f6;
+    --stuff-color: #4d4d4d;
+    --sub-stuff-color: #909090;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding-top: 40%;
+}
+
+.progress-wrapper {
+    width: 600px;
+    height: 100px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg);
+    transition: all 2s;
+    position: relative;
+    perspective: 1000px;
+}
+
+
+.side {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 254, 254, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bottom {
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    box-shadow: 10px 10px 10px 10px rgba(90, 90, 90, 0.7);
+}
+
+.top {
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+.back {
+    transform: translateZ(-60px);
+}
+
+.left {
+    width: 60px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+
+.right {
+    position: absolute;
+    left: unset;
+    top: 0;
+    right: 0;
+    width: 60px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+
+}
